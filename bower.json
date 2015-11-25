@@ -1,0 +1,22 @@
+{
+  "name": "mini-exchange",
+  "version": "0.0.1",
+  "description": "simplified version of exchange",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "exchange"
+  ],
+  "authors": [
+    "wadexie"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

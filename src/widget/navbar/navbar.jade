@@ -1,0 +1,11 @@
+nav(class='navbar')
+  .navbar-header
+    .navbar__brand 换量记录平台
+  .navbar-collapse
+    ul.navbar__nav
+      - list = ['换量记录', '合作方管理']
+        each item in list
+          li.navbar__link= item
+  .navbar-right
+    .navbar__user
+      .navbar__username 阿姨洗铁路
