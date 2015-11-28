@@ -1,0 +1,14 @@
+// @import 'base';
+
+.record-panel__header {
+  margin: 10px 0;
+}
+
+.record-counter {
+  line-height: 34px;
+}
+
+.require:after {
+  content: '*';
+  color: red;
+}

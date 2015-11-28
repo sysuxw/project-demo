@@ -1,0 +1,81 @@
+extends ./templates/layout.jade
+
+append head
+  link(rel='stylesheet' href='../static/index/index.css')
+
+append content
+  ul.nav.nav-tabs
+    li.active(role='presentation')
+      a(href='#') 进行中
+    li(role='presentation')
+      a(href='#') 已完成
+    li(role='presentation')
+      a(href='#') 已失效
+
+  .record-panel
+    .row.record-panel__header
+      .col-md-10.record__counter 暂无换量记录
+      button.record__add-btn.btn.btn-primary.pull-right(
+        type='button'
+        data-toggle='modal'
+        data-target='#modal--add-exchange'
+      ) 添加换量
+    .row.record-field
+      .record-item
+
+prepend foot
+  .modal.fade#modal--add-exchange
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal')
+            span &times;
+          h4.modal-title 添加换量
+        .modal-body
+          form.form-horizontal
+            .form-group
+              label.col-sm-2.control-label.require 受益
+              .col-sm-6
+                select.form-control(name='')
+                  option(value='') 点击后显示全部合作方，
+                  option(value='') 具体数据可以在
+                  option(value='') 「合作方管理」中管理。
+
+            .form-group
+              label.col-sm-2.control-label.require 推广应用
+              .col-sm-6
+                input.form-control(name='', type="text", placeholder='输入要推广的应用名称')
+            .form-group
+              label.col-sm-2.control-label.require 流量提供
+              .col-sm-6
+                select.form-control(name='')
+                  option(value='') 点击后显示全部合作方，
+                  option(value='') 具体数据可以在
+                  option(value='') 「合作方管理」中管理。
+                  option(value='') 这里的内容与「受益方」一样，
+                  option(value='') 用户需要选择一个。
+            .form-group
+              label.col-sm-2.control-label.require 流量载体
+              .col-sm-6
+                input.form-control(name='', type="text", placeholder='输入要使用哪个流量渠道去推广该应用')
+            .form-group
+              label.col-sm-2.control-label.require 推广方式
+              .col-sm-6
+                label.radio-inline
+                  input(type='radio', name='', value='')
+                  | CPA
+                label.radio-inline
+                  input(type='radio', name='', value='')
+                  | CPT
+            .form-group
+              label.col-sm-2.control-label.require 时间段
+              .col-sm-3
+                input.form-control(type="date")
+              .col-sm-3
+                input.form-control(type="date")
+        .modal-footer
+          button.btn.btn-primary(type='button') 确定
+          button.btn.btn-default(type='button') 取消
+
+append foot
+  script(data-main='../static/index/index', src='../static/vendors/require.js')

@@ -18,5 +18,21 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.22",
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.1.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css"
+      ]
+    },
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  }
 }

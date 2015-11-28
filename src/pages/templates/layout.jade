@@ -4,9 +4,10 @@ html
     block title
       title 换量记录平台
     block head
-      include ./head.jade
+      include ./include/head.jade
   body
-    block content
-      include ./navbar/navbar.jade
+    .container
+      block content
+        include ./navbar/navbar.jade
     block foot
-      include ./foot.jade
+      include ./include/foot.jade

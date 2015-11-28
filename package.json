@@ -12,6 +12,7 @@
   "author": "wadexie",
   "license": "ISC",
   "devDependencies": {
+    "colors": "^1.1.2",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-clean": "^0.3.1",
@@ -21,10 +22,12 @@
     "gulp-jshint": "^2.0.0",
     "gulp-newer": "^1.1.0",
     "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "jshint": "^2.8.0",
-    "jshint-stylish": "^2.1.0"
+    "jshint-stylish": "^2.1.0",
+    "main-bower-files": "^2.9.0"
   }
 }

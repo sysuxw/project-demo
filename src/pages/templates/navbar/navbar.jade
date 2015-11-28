@@ -1,11 +1,14 @@
-nav(class='navbar')
-  .navbar-header
-    .navbar__brand 换量记录平台
-  .navbar-collapse
-    ul.navbar__nav
-      - list = ['换量记录', '合作方管理']
-        each item in list
-          li.navbar__link= item
-  .navbar-right
-    .navbar__user
-      .navbar__username 阿姨洗铁路
+.row
+  nav.navbar.navbar-default
+    .container-fluid
+      .navbar-header
+        a.navbar-brand(href='#') 换量记录平台
+      .collapse.navbar-collapse
+        ul.nav.navbar-nav#navigator
+          li
+            a(href='#') 换量记录
+          li
+            a(href='#') 合作方管理
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href='#') wadexie(谢炜)
